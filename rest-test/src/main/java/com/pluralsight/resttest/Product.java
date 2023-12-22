@@ -8,7 +8,7 @@ public class Product {
 
 
 
-    public Product(int productId, String product1, double v) {
+    public Product(int productId, String product1, double v, double unitPrice) {
         this.productId = productId;
     }
 
@@ -20,6 +20,9 @@ public class Product {
         this.unitPrice = unitPrice;
     }
 
+    public Product() {
+
+    }
 
 
     public int getProductId() {
@@ -52,5 +55,16 @@ public class Product {
 
     public void setUnitPrice(double unitPrice) {
         this.unitPrice = unitPrice;
+    }
+
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Product{");
+        sb.append("productId=").append(productId);
+        sb.append(", productName='").append(productName).append('\'');
+        sb.append(", categoryId=").append(categoryId);
+        sb.append(", unitPrice=").append(unitPrice);
+        sb.append('}');
+        return sb.toString();
     }
 }

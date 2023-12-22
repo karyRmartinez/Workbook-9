@@ -7,10 +7,12 @@ import org.apache.commons.dbcp2.BasicDataSource;
 import org.springframework.context.annotation.Bean;
 
 import javax.sql.DataSource;
+import java.util.logging.Logger;
 
 @Configuration
 public class DatabaseConfiguration {
     private BasicDataSource basicDataSource;
+    private Logger logger;
     @Bean
     public DataSource dataSource(){
         return (DataSource) basicDataSource;
