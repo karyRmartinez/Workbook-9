@@ -19,7 +19,8 @@ public class CategoriesController {
     }
     private final List<Category> categories = Arrays.asList(
             new Category(1, "Category1"),
-            new Category(2, "Category2")
+            new Category(2, "Category2"),
+            new Category(3, "Category 3")
 
     );
 
